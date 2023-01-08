@@ -4,8 +4,8 @@ description = "3x3x4 cuboid easy beginner tutorial"
 date = 2023-01-08
 
 [taxonomies]
-categories = ["puzzles", "speedcubing", "tutorials"]
-tags = ["3x3x4", "speedcubing", "non-WCA"]
+categories = ["puzzles", "tutorials"]
+tags = ["3x3x4", "non-WCA"]
 +++
 
 # 3x3x4 tutorial
@@ -46,7 +46,7 @@ This method consists of 4 steps:
 
 ## **{{accent(text="The first layer")}}**
 
-1. Move target edge to the top replace it with correct edge, undo.
+1. Move target edge to the top, replace it with correct edge, undo.
 2. Solve corners using **R U R' U'**. <ins>Don't rotate the cube, just the first layer, or you gonna ruin solved stuff</ins>.
 
 

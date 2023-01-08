@@ -4,7 +4,7 @@ description = "3x3 Rubik's cube beginner CFOP tutorial."
 date = 2022-02-25
 
 [taxonomies]
-categories = ["puzzles", "speedcubing", "tutorials"]
+categories = ["puzzles", "tutorials"]
 tags = ["3x3", "speedcubing", "CFOP"]
 +++
 
