@@ -31,7 +31,7 @@ This method consists of 4 steps:
 ## **{{accent(text="Middle first layer")}}**
 
 1. Orient centers of this layer correctly according to the color scheme. Holding white side on bottom colors should go clockwise in this order: blue, orange, green, red. This step is pretty intuitive.
-2. Solve wings using corner insertion algorithm (**R2 Uw R2 Uw'**) like on big cubes.
+2. Solve wings using corner insertion algorithm (**R2 Uw R2 Uw' R2**) like on big cubes.
 
 
 ## **{{accent(text="Middle second layer")}}**
@@ -56,7 +56,7 @@ This method consists of 4 steps:
 ## **{{accent(text="The first layer")}}**
 
 1. Move target edge to the top, replace it with correct edge, undo.
-2. Solve corners using corner insertion algorithm (**R2 U R2 U'**). <ins>Don't rotate the cube, just the first layer, or you gonna ruin solved stuff</ins>.
+2. Solve corners using corner insertion algorithm (**R2 U R2 U' R2**). <ins>Don't rotate the cube, just the first layer, or you gonna ruin solved stuff</ins>.
 
 
 ## **{{accent(text="The last layer")}}**
