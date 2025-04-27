@@ -1,5 +1,5 @@
 # The URL the site will be built for
-base_url = "localhost"
+base_url = "https://q60.github.io"
 title = "uwu dev blog"
 
 compile_sass = true
@@ -33,8 +33,8 @@ read_more = "read more"
 enable_katex = true
 
 main_menu = [
-  {url = "/about//", name = "about"},
-  {url = "/contact//", name = "contact"},
+  {url = "about//", name = "about"},
+  {url = "contact//", name = "contact"},
   {url = "https://codeberg.org/q60", name = "codeberg", external = true},
   {url = "https://github.com/q60", name = "github", external = true},
 ]
