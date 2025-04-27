@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <title>balalaika_bear - Elixir library for VK API - kira</title>
+    
+    
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1"><meta name="description" content=" balalaika_bear - Elixir library for VK API balalaika_bear is a fork of deprecated VK API library for Elixir."/><meta name="keywords" content="code, elixir" />
+    <meta property="og:title" content="uwu dev blog -&nbsp;balalaika_bear - Elixir library for VK API" />
+    <meta property="og:type" content="website"/><meta property="og:url" content="https:&#x2F;&#x2F;q60.github.io&#x2F;ex-vk-lib&#x2F;"/><meta property="og:description" content="balalaika_bear is a fork of deprecated VK API library for Elixir."/>
+    <link rel="preload" href="https://q60.github.io/assets/fonts/FiraCode-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="https://q60.github.io/assets/fonts/FiraCode-Bold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://q60.github.io/style.css?h=97e262212a0704163528">
+    <link rel="stylesheet" href="https://q60.github.io/color/red.css?h=5f2342c3f36eee3607bf">
+</head>
+    <body>
+        <div class="container center">
+<header class="header">
+    <div class="header__inner">
+        <div class="header__logo">
+            <a href="https:&#x2F;&#x2F;q60.github.io">
+    <div class="logo">
+        kira
+    </div>
+</a>
+        </div>
+        <div class="menu-trigger">menu</div>
+    </div>
+    
+    <nav class="menu">
+        <ul class="menu__inner menu__inner--desktop">
+            
+            
+        <li>
+            <a href="
+    
+        https://q60.github.io/about/
+    
+">about</a>
+        </li>
+        <li>
+            <a href="
+    
+        https://q60.github.io/contact/
+    
+">contact</a>
+        </li>
+        <li>
+            <a href="
+    
+        https:&#x2F;&#x2F;codeberg.org&#x2F;q60
+    
+">codeberg</a>
+        </li>
+        <li>
+            <a href="
+    
+        https:&#x2F;&#x2F;github.com&#x2F;q60
+    
+">github</a>
+        </li></ul>
+
+        <ul class="menu__inner menu__inner--mobile">
+            
+        <li>
+            <a href="
+    
+        https://q60.github.io/about/
+    
+">about</a>
+        </li>
+        <li>
+            <a href="
+    
+        https://q60.github.io/contact/
+    
+">contact</a>
+        </li>
+        <li>
+            <a href="
+    
+        https:&#x2F;&#x2F;codeberg.org&#x2F;q60
+    
+">codeberg</a>
+        </li>
+        <li>
+            <a href="
+    
+        https:&#x2F;&#x2F;github.com&#x2F;q60
+    
+">github</a>
+        </li>
+        </ul>
+    </nav>
+
+    </header>
+<div class="content"><article class="post">
+        <header>
+            <h1 class="post-title">
+                <a href="https:&#x2F;&#x2F;q60.github.io&#x2F;ex-vk-lib&#x2F;">balalaika_bear - Elixir library for VK API</a>
+            </h1>
+            
+    <div class="post-meta">
+        <span class="post-date">2022.01.25
+                </span>
+
+        <span class="post-author">
+    ::
+    kira</span>
+
+        
+
+    
+    ::
+    #<a href="https://q60.github.io/tags/code/">code</a>
+        
+    #<a href="https://q60.github.io/tags/elixir/">elixir</a>
+        
+    
+            
+        
+    
+    </div>
+
+            
+    
+</header><h1 id="what">what</h1>
+<p><a style="color: var(--accent);" href="https:&#x2F;&#x2F;github.com&#x2F;q60&#x2F;balalaika_bear">balalaika_bear</a>
+ is a fork of deprecated VK API library for <strong>Elixir</strong>.</p>
+<h2 id="why-and-how-it-started">why and how it started</h2>
+<p>Most of the modern programming languages ain't rich of decent VK API libraries. And only some exceptions that proves the rule has <strong>Longpoll</strong> functionality amongst API method functions and macros.</p>
+<p>It's the main problem I am trying to solve by rewriting an existing library for my most familiar programming language.</p>
+<h2 id="milestones">milestones</h2>
+<table><thead><tr><th>goal</th><th>state</th></tr></thead><tbody>
+<tr><td>implement <strong>Group Longpoll</strong></td><td><strong><a style="color: var(--accent);" >[DONE]</a>
+</strong></td></tr>
+<tr><td>implement <strong>User Longpoll</strong></td><td><strong><a style="color: var(--accent);" >[DONE]</a>
+</strong></td></tr>
+<tr><td>make a whole new library, starting from a scratch</td><td><strong><a style="color: #F85F63">[YET TO COME]</a>
+</strong></td></tr>
+<tr><td>restructure <strong>User Longpoll</strong> responses in a neat way</td><td><strong><a style="color: #F85F63">[YET TO COME]</a>
+</strong></td></tr>
+<tr><td>implement macros for bot usage</td><td><strong><a style="color: #F85F63">[YET TO COME]</a>
+</strong></td></tr>
+<tr><td>make some simple boilerplates for bots</td><td><strong><a style="color: #F85F63">[YET TO COME]</a>
+</strong></td></tr>
+</tbody></table>
+<p>The new perfect library will be fully independent of <strong>balalaika_bear</strong>.</p>
+<h2 id="usage-example">usage example</h2>
+<pre data-lang="elixir" style="background-color:#fafafa;color:#61676c;" class="language-elixir "><code class="language-elixir" data-lang="elixir"><span style="color:#fa6e32;">defmodule </span><span style="color:#399ee6;">TestBot </span><span style="color:#fa6e32;">do
+</span><span>  </span><span style="color:#fa6e32;">alias </span><span style="color:#399ee6;">BalalaikaBear</span><span style="color:#61676ccc;">.</span><span style="color:#399ee6;">Longpoll</span><span style="color:#61676ccc;">.</span><span style="color:#399ee6;">GroupLongpoll</span><span style="color:#61676ccc;">, </span><span style="color:#ff8f40;">as: </span><span style="color:#399ee6;">Longpoll
+</span><span>
+</span><span>  </span><span style="color:#ed9366;">@</span><span>token </span><span style="color:#86b300;">&quot;your token&quot;
+</span><span>  </span><span style="color:#ed9366;">@</span><span>group_id </span><span style="color:#86b300;">&quot;your group id&quot;
+</span><span>
+</span><span>  </span><span style="color:#ed9366;">@</span><span>spec main(any) :: any
+</span><span>  </span><span style="color:#fa6e32;">def </span><span style="color:#f29718;">main</span><span>(_args) </span><span style="color:#fa6e32;">do
+</span><span style="font-style:italic;color:#abb0b6;">    # Start longpoll
+</span><span>    parent </span><span style="color:#ed9366;">=</span><span> self()
+</span><span>
+</span><span>    pid </span><span style="color:#ed9366;">=
+</span><span>      spawn(
+</span><span>        </span><span style="color:#399ee6;">Longpoll</span><span style="color:#61676ccc;">,
+</span><span>        </span><span style="color:#86b300;">:init</span><span style="color:#61676ccc;">,
+</span><span>        [parent</span><span style="color:#61676ccc;">,</span><span> %{</span><span style="color:#ff8f40;">access_token: </span><span style="color:#ed9366;">@</span><span>token</span><span style="color:#61676ccc;">, </span><span style="color:#ff8f40;">group_id: </span><span style="color:#ed9366;">@</span><span>group_id</span><span style="color:#61676ccc;">, </span><span style="color:#ff8f40;">v: 5.131</span><span>}]
+</span><span>      )
+</span><span>
+</span><span>    loop()
+</span><span>  </span><span style="color:#fa6e32;">end
+</span><span>
+</span><span style="font-style:italic;color:#abb0b6;">  # Main longpoll loop
+</span><span>  </span><span style="color:#fa6e32;">defp </span><span style="color:#f29718;">loop</span><span>() </span><span style="color:#fa6e32;">do
+</span><span>    </span><span style="color:#fa6e32;">receive do
+</span><span>      {</span><span style="color:#86b300;">:ok</span><span style="color:#61676ccc;">,</span><span> response} </span><span style="color:#ed9366;">-&gt;
+</span><span>        updates </span><span style="color:#ed9366;">=</span><span> response[</span><span style="color:#86b300;">&quot;updates&quot;</span><span>]
+</span><span>
+</span><span>        </span><span style="color:#fa6e32;">unless</span><span> updates </span><span style="color:#ed9366;">== </span><span style="color:#ff8f40;">nil </span><span style="color:#fa6e32;">do
+</span><span>          [update </span><span style="color:#ed9366;">|</span><span> _] </span><span style="color:#ed9366;">=</span><span> response[</span><span style="color:#86b300;">&quot;updates&quot;</span><span>]
+</span><span>
+</span><span style="font-style:italic;color:#abb0b6;">          # Processing events in separate tasks
+</span><span>          </span><span style="color:#399ee6;">Task</span><span style="color:#61676ccc;">.</span><span>start(</span><span style="color:#fa6e32;">fn </span><span style="color:#ed9366;">-&gt;
+</span><span>            process_event(update[</span><span style="color:#86b300;">&quot;type&quot;</span><span>]</span><span style="color:#61676ccc;">,</span><span> update[</span><span style="color:#86b300;">&quot;object&quot;</span><span>])
+</span><span>          </span><span style="color:#fa6e32;">end</span><span>)
+</span><span>        </span><span style="color:#fa6e32;">end
+</span><span>    </span><span style="color:#fa6e32;">end
+</span><span>
+</span><span>    loop()
+</span><span>  </span><span style="color:#fa6e32;">end
+</span><span>
+</span><span style="font-style:italic;color:#abb0b6;">  # Works with incoming events depending on event type.
+</span><span style="font-style:italic;color:#abb0b6;">  # Works with incoming messages.
+</span><span>  </span><span style="color:#fa6e32;">defp </span><span style="color:#f29718;">process_event</span><span>(</span><span style="color:#86b300;">&quot;message_new&quot;</span><span style="color:#61676ccc;">,</span><span> event) </span><span style="color:#fa6e32;">do
+</span><span>    message </span><span style="color:#ed9366;">=</span><span> event[</span><span style="color:#86b300;">&quot;message&quot;</span><span>]
+</span><span>    from_id </span><span style="color:#ed9366;">=</span><span> message[</span><span style="color:#86b300;">&quot;from_id&quot;</span><span>]
+</span><span>    peer_id </span><span style="color:#ed9366;">=</span><span> message[</span><span style="color:#86b300;">&quot;peer_id&quot;</span><span>]
+</span><span>
+</span><span>    process_message(from_id</span><span style="color:#61676ccc;">,</span><span> peer_id</span><span style="color:#61676ccc;">,</span><span> message)
+</span><span>  </span><span style="color:#fa6e32;">end
+</span><span>
+</span><span style="font-style:italic;color:#abb0b6;">  # Works with other events
+</span><span>  </span><span style="color:#fa6e32;">defp </span><span style="color:#f29718;">process_event</span><span>(_</span><span style="color:#61676ccc;">,</span><span> _) </span><span style="color:#fa6e32;">do
+</span><span>  </span><span style="color:#fa6e32;">end
+</span><span>
+</span><span style="font-style:italic;color:#abb0b6;">  # Works with message events.
+</span><span style="font-style:italic;color:#abb0b6;">  # If message from chat
+</span><span>  </span><span style="color:#fa6e32;">defp </span><span style="color:#f29718;">process_message</span><span>(from_id</span><span style="color:#61676ccc;">,</span><span> peer_id</span><span style="color:#61676ccc;">,</span><span> message) </span><span style="color:#ed9366;">when</span><span> from_id </span><span style="color:#ed9366;">!=</span><span> peer_id </span><span style="color:#fa6e32;">do
+</span><span>    text </span><span style="color:#ed9366;">=</span><span> message[</span><span style="color:#86b300;">&quot;text&quot;</span><span>]
+</span><span>    
+</span><span style="font-style:italic;color:#abb0b6;">    # ...
+</span><span style="font-style:italic;color:#abb0b6;">    # do something with message
+</span><span style="font-style:italic;color:#abb0b6;">    # ...
+</span><span>  </span><span style="color:#fa6e32;">end
+</span><span>
+</span><span style="font-style:italic;color:#abb0b6;">  # If message from messenger
+</span><span>  </span><span style="color:#fa6e32;">defp </span><span style="color:#f29718;">process_message</span><span>(_from_id</span><span style="color:#61676ccc;">,</span><span> peer_id</span><span style="color:#61676ccc;">,</span><span> message) </span><span style="color:#fa6e32;">do
+</span><span>    text </span><span style="color:#ed9366;">=</span><span> message[</span><span style="color:#86b300;">&quot;text&quot;</span><span>]
+</span><span>    
+</span><span style="font-style:italic;color:#abb0b6;">    # ...
+</span><span style="font-style:italic;color:#abb0b6;">    # do something with message
+</span><span style="font-style:italic;color:#abb0b6;">    # ...
+</span><span>  </span><span style="color:#fa6e32;">end
+</span><span style="color:#fa6e32;">end
+</span></code></pre>
+
+
+        
+    
+
+        
+        
+    </article></div>
+    <div class="pagination">
+        <div class="pagination__buttons">
+            </div>
+    </div>
+<footer class="footer">
+                    <div class="footer__inner"><div class="copyright">
+            <span>© 2025 <a href="https://github.com/ejmg/zerm">zerm</a> :: Powered by <a href="https://www.getzola.org/">Zola</a></span>
+            <span>:: Theme made by <a href="https://github.com/ejmg">ejmg</a></span>
+        </div>
+    <script type="text/javascript" src="https://q60.github.io/assets/js/main.js"></script>
+</div>
+                    
+
+                </footer></div>
+    </body>
+</html>

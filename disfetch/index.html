@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <title>disfetch - system information fetching tool - kira</title>
+    
+    
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1"><meta name="description" content=" disfetch - system information fetching tool Yet another *nix distro fetching program, but less complex. Written in POSIX shell."/><meta name="keywords" content="code, utils, shell" />
+    <meta property="og:title" content="uwu dev blog -&nbsp;disfetch - system information fetching tool" />
+    <meta property="og:type" content="website"/><meta property="og:url" content="https:&#x2F;&#x2F;q60.github.io&#x2F;disfetch&#x2F;"/><meta property="og:description" content="Yet another *nix distro fetching program, but less complex. Written in POSIX shell."/>
+    <link rel="preload" href="https://q60.github.io/assets/fonts/FiraCode-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="https://q60.github.io/assets/fonts/FiraCode-Bold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://q60.github.io/style.css?h=97e262212a0704163528">
+    <link rel="stylesheet" href="https://q60.github.io/color/red.css?h=5f2342c3f36eee3607bf">
+</head>
+    <body>
+        <div class="container center">
+<header class="header">
+    <div class="header__inner">
+        <div class="header__logo">
+            <a href="https:&#x2F;&#x2F;q60.github.io">
+    <div class="logo">
+        kira
+    </div>
+</a>
+        </div>
+        <div class="menu-trigger">menu</div>
+    </div>
+    
+    <nav class="menu">
+        <ul class="menu__inner menu__inner--desktop">
+            
+            
+        <li>
+            <a href="
+    
+        https://q60.github.io/about/
+    
+">about</a>
+        </li>
+        <li>
+            <a href="
+    
+        https://q60.github.io/contact/
+    
+">contact</a>
+        </li>
+        <li>
+            <a href="
+    
+        https:&#x2F;&#x2F;codeberg.org&#x2F;q60
+    
+">codeberg</a>
+        </li>
+        <li>
+            <a href="
+    
+        https:&#x2F;&#x2F;github.com&#x2F;q60
+    
+">github</a>
+        </li></ul>
+
+        <ul class="menu__inner menu__inner--mobile">
+            
+        <li>
+            <a href="
+    
+        https://q60.github.io/about/
+    
+">about</a>
+        </li>
+        <li>
+            <a href="
+    
+        https://q60.github.io/contact/
+    
+">contact</a>
+        </li>
+        <li>
+            <a href="
+    
+        https:&#x2F;&#x2F;codeberg.org&#x2F;q60
+    
+">codeberg</a>
+        </li>
+        <li>
+            <a href="
+    
+        https:&#x2F;&#x2F;github.com&#x2F;q60
+    
+">github</a>
+        </li>
+        </ul>
+    </nav>
+
+    </header>
+<div class="content"><article class="post">
+        <header>
+            <h1 class="post-title">
+                <a href="https:&#x2F;&#x2F;q60.github.io&#x2F;disfetch&#x2F;">disfetch - system information fetching tool</a>
+            </h1>
+            
+    <div class="post-meta">
+        <span class="post-date">2022.01.24
+                </span>
+
+        <span class="post-author">
+    ::
+    kira</span>
+
+        
+
+    
+    ::
+    #<a href="https://q60.github.io/tags/code/">code</a>
+        
+    #<a href="https://q60.github.io/tags/utils/">utils</a>
+        
+    #<a href="https://q60.github.io/tags/shell/">shell</a>
+        
+    
+            
+        
+    
+    </div>
+
+            
+    
+</header><h1 id="hi">hi</h1>
+<p><a style="color: var(--accent);" href="https:&#x2F;&#x2F;github.com&#x2F;q60&#x2F;disfetch">disfetch</a>
+ is a simple <em>POSIX Shell</em> utility that fetches your system information in a prettier way.</p>
+<h2 id="why-disfetch">why disfetch?</h2>
+<p>Unlike many other fetching tools, <strong>disfetch</strong> covers several principles:</p>
+<ol>
+<li>being the most simple and minimalistic while providing beautiful <em>same style</em> logos</li>
+<li>providing user with the only important and needed information, remaining simple in all aspects</li>
+<li>each logo is handmade, ASCII-only, not more and not less than 8 rows</li>
+<li>highly commented readable and maintainable bloatless code</li>
+<li>being fast</li>
+</ol>
+<h4 id="some-examples">some examples</h4>
+<p><sub><strong>by me:</strong></sub>
+<a href="example1.png">
+    <img src="example1.png" style="border: 3px solid var(--accent); display: block; margin-left: auto; margin-right: auto;">
+</a>
+
+<sub><strong>by <a href="https://github.com/Corgiek">https://github.com/Corgiek</a>:</strong></sub>
+<a href="example2.png">
+    <img src="example2.png" style="border: 3px solid var(--accent); display: block; margin-left: auto; margin-right: auto;">
+</a>
+</p>
+<h4 id="benchmarks">benchmarks</h4>
+<table><thead><tr><th>fetch</th><th><code>time</code></th></tr></thead><tbody>
+<tr><td><code>disfetch</code></td><td><strong>0.15s</strong> user <strong>0.05s</strong> system <strong>108%</strong> cpu <strong>0.188</strong></td></tr>
+<tr><td><code>pfetch</code></td><td><strong>0.04s</strong> user <strong>0.02s</strong> system <strong>101%</strong> cpu <strong>0.057</strong></td></tr>
+<tr><td><code>neofetch</code></td><td><strong>0.16s</strong> user <strong>0.10s</strong> system <strong>57%</strong> cpu <strong>0.443</strong></td></tr>
+<tr><td><code>neofetch --disable resolution theme icons term cpu gpu memory wm_theme</code></td><td><strong>0.14s</strong> user <strong>0.07s</strong> system <strong>102%</strong> cpu <strong>0.207</strong></td></tr>
+</tbody></table>
+<h2 id="supported-operating-systems">supported operating systems</h2>
+<p>Here's the list of currently supported operating systems.</p>
+<table><thead><tr><th>distro</th><th>packages</th><th>logo</th></tr></thead><tbody>
+<tr><td>Alpine Linux</td><td>yes</td><td>yes</td></tr>
+<tr><td>Android</td><td>yes</td><td>yes</td></tr>
+<tr><td>Astra Linux</td><td>yes</td><td>yes</td></tr>
+<tr><td>ArchBang Linux</td><td>yes</td><td>yes</td></tr>
+<tr><td>ArchLabs Linux</td><td>yes</td><td>yes</td></tr>
+<tr><td>Arch Linux</td><td>yes</td><td>yes</td></tr>
+<tr><td>ArcoLinux</td><td>yes</td><td>yes</td></tr>
+<tr><td>Artix Linux</td><td>yes</td><td>yes</td></tr>
+<tr><td>Bedrock Linux</td><td>yes</td><td>yes</td></tr>
+<tr><td>CentOS</td><td>yes</td><td>yes</td></tr>
+<tr><td>Debian</td><td>yes</td><td>yes</td></tr>
+<tr><td>Elementary OS</td><td>yes</td><td>yes</td></tr>
+<tr><td>EndeavourOS</td><td>yes</td><td>yes</td></tr>
+<tr><td>Fedora</td><td>yes</td><td>yes</td></tr>
+<tr><td>Garuda Linux</td><td>yes</td><td>yes</td></tr>
+<tr><td>Gentoo Linux</td><td>yes</td><td>yes</td></tr>
+<tr><td>Haiku OS</td><td>yes</td><td>yes</td></tr>
+<tr><td>Kali Linux</td><td>yes</td><td>yes</td></tr>
+<tr><td>Kubuntu</td><td>yes</td><td>yes</td></tr>
+<tr><td>Linux Mint</td><td>yes</td><td>yes</td></tr>
+<tr><td>lubuntu</td><td>yes</td><td><ins><strong>no</strong></ins></td></tr>
+<tr><td>Manjaro</td><td>yes</td><td>yes</td></tr>
+<tr><td>MSYS2</td><td>yes</td><td>yes</td></tr>
+<tr><td>MX Linux</td><td>yes</td><td>yes</td></tr>
+<tr><td>NixOS</td><td>yes</td><td>yes</td></tr>
+<tr><td>openSUSE</td><td>yes</td><td>yes</td></tr>
+<tr><td>Parabola Linux-libre</td><td>yes</td><td>yes</td></tr>
+<tr><td>postmarketOS</td><td>yes</td><td>yes</td></tr>
+<tr><td>Qubes OS</td><td>yes</td><td>yes</td></tr>
+<tr><td>Raspbian</td><td>yes</td><td>yes</td></tr>
+<tr><td>Red Hat Enterprise Linux</td><td>yes</td><td>yes</td></tr>
+<tr><td>Slackware Linux</td><td>yes</td><td>yes</td></tr>
+<tr><td>Ubuntu</td><td>yes</td><td>yes</td></tr>
+<tr><td>Void Linux</td><td>yes</td><td>yes</td></tr>
+<tr><td>Zorin OS</td><td>yes</td><td>yes</td></tr>
+</tbody></table>
+<h2 id="installation">installation</h2>
+<a href="https://repology.org/project/disfetch/versions">
+    <img src="https://repology.org/badge/vertical-allrepos/disfetch.svg" alt="Packaging status">
+</a>
+<ul>
+<li>There's <a href="https://aur.archlinux.org/packages/disfetch/">a package in AUR</a></li>
+<li>There's <a href="https://mpr.hunterwittenborn.com/packages/disfetch/">a package in MPR</a></li>
+<li>There's <a href="https://pkgs.alpinelinux.org/packages?name=disfetch">a package in Alpine</a></li>
+<li>There's also <a href="https://search.nixos.org/packages?from=0&amp;size=50&amp;sort=relevance&amp;query=disfetch">a package in Nixpkgs</a></li>
+<li>Grabbing the latest release <a href="https://github.com/q60/disfetch/releases">tarball</a> then running <code>make install</code>
+should be enough.</li>
+</ul>
+<p>Feel free to contribute, create and maintain packages for disfetch for
+your favorite distros.</p>
+<h2 id="usage">usage</h2>
+<p>See <code>disfetch -h</code>.</p>
+
+
+        
+    
+
+        
+        
+    </article></div>
+    <div class="pagination">
+        <div class="pagination__buttons">
+            </div>
+    </div>
+<footer class="footer">
+                    <div class="footer__inner"><div class="copyright">
+            <span>© 2025 <a href="https://github.com/ejmg/zerm">zerm</a> :: Powered by <a href="https://www.getzola.org/">Zola</a></span>
+            <span>:: Theme made by <a href="https://github.com/ejmg">ejmg</a></span>
+        </div>
+    <script type="text/javascript" src="https://q60.github.io/assets/js/main.js"></script>
+</div>
+                    
+
+                </footer></div>
+    </body>
+</html>
