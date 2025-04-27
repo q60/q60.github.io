@@ -1,0 +1,40 @@
+# The URL the site will be built for
+base_url = "localhost"
+title = "uwu dev blog"
+
+compile_sass = true
+
+build_search_index = false
+
+theme = "zerm"
+
+taxonomies = [
+  {name = "tags"},
+]
+
+[markdown]
+highlight_code = true
+highlight_theme = "ayu-light"
+render_emoji = true
+
+[extra]
+theme_color = "red"
+center = true
+author = "kira"
+show_author = true
+
+show_categories = false
+show_tags = true
+
+logo_text = "kira"
+
+read_more = "read more"
+
+enable_katex = true
+
+main_menu = [
+  {url = "/about//", name = "about"},
+  {url = "/contact//", name = "contact"},
+  {url = "https://codeberg.org/q60", name = "codeberg", external = true},
+  {url = "https://github.com/q60", name = "github", external = true},
+]
